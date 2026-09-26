@@ -9,3 +9,10 @@
    const totalPrice = price * quantity;
 
    console.log(`Totalt pris: ${totalPrice} kr`);
+
+   //beräkna momsen 25% = 25 / 100 = 0,25
+   const vat = totalPrice * 0.25;
+
+   // Lägger till momsen för att få totalpriset inklusive moms 300 x 0,25 = 75 kr i moms
+   const totalPriceVat = totalPrice + vat;
+   console.log(`Totalt pris inklusive moms: ${totalPriceVat} kr`);
